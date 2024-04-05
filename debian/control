@@ -7,6 +7,5 @@ Standards-Version: 1.0.0
 
 Package: dash-ha
 Architecture: any
-Build-Depends: protobuf-compiler (>=3.21.12), libprotobuf-dev (>=3.21.12)
 Depends: ${shlibs:Depends}
 Description: HA control plane services for SONiC project.

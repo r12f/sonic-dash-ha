@@ -792,6 +792,9 @@ name = "swbus-core"
 version = "0.1.0"
 dependencies = [
  "swbus-contracts",
+ "tokio",
+ "tokio-stream",
+ "tonic",
 ]
 
 [[package]]

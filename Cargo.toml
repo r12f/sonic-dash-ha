@@ -47,6 +47,7 @@ all = 'allow'
 
 [workspace.dependencies]
 tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
+tokio-stream = "0.1.15"
 prost = "0.12"
 tonic = "0.11"
 

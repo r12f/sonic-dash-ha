@@ -1,6 +1,6 @@
 [package]
-name = "sonic-hamgrd"
-description = "DASH HA manager daemon"
+name = "hamgrd"
+description = "SONiC DASH high availability manager daemon"
 categories = ["command-line-utilities"]
 readme = "README.md"
 version.workspace = true
@@ -22,6 +22,7 @@ edition.workspace = true
 resolver = '2'
 members = [
     "crates/swbus-contracts",
+    "crates/swbus-core",
     "crates/swbusd"
 ]
 exclude = []
@@ -48,6 +49,9 @@ all = 'allow'
 tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
 prost = "0.12"
 tonic = "0.11"
+
+# Internal dependencies
+swbus-contracts = { version = "0.1.0", path = "crates/swbus-contracts" }
 
 # Dev dependencies
 pretty_assertions = "1"

@@ -1,6 +1,7 @@
 [package]
-name = "sonic-swbus-contracts"
+name = "swbus-contracts"
 description = "SONiC Switch Bus Contract"
+categories = ["network-programming"]
 version.workspace = true
 authors.workspace = true
 license.workspace = true

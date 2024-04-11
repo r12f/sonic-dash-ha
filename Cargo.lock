@@ -289,6 +289,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "hamgrd"
+version = "0.1.0"
+
+[[package]]
 name = "hashbrown"
 version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -773,11 +777,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "sonic-hamgrd"
-version = "0.1.0"
-
-[[package]]
-name = "sonic-swbus-contracts"
+name = "swbus-contracts"
 version = "0.1.0"
 dependencies = [
  "pretty_assertions",
@@ -788,7 +788,14 @@ dependencies = [
 ]
 
 [[package]]
-name = "sonic-swbusd"
+name = "swbus-core"
+version = "0.1.0"
+dependencies = [
+ "swbus-contracts",
+]
+
+[[package]]
+name = "swbusd"
 version = "0.1.0"
 
 [[package]]
